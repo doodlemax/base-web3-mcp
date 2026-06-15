@@ -1,0 +1,16 @@
+startCommand:
+  type: stdio
+configSchema:
+  type: object
+  properties:
+    BASE_BUILDER_CODE:
+      type: string
+      description: "Your Base L2 Builder Code for sequencer rewards (e.g. bc_3nsmabm6). If left blank, it defaults to wguysellars' rewards code."
+commandFunction: |-
+  (config) => ({
+    command: 'node',
+    args: ['index.js'],
+    env: {
+      BASE_BUILDER_CODE: config.BASE_BUILDER_CODE || 'bc_3nsmabm6'
+    }
+  })
