@@ -55,6 +55,14 @@ Add the following to your `claude_desktop_config.json` (located at `~/Library/Ap
    - **Type:** `stdio`
    - **Command:** `node /absolute/path/to/mcp-server/index.js`
 
+#### 3. Smithery (Recommended)
+Install the server directly into Claude Desktop using the Smithery CLI:
+```bash
+npx -y @smithery/cli@latest install base-web3-mcp --client claude
+```
+For Cursor, configure it as a standard stdio server as shown above.
+
+
 ---
 
 ## Remote API Setup (Stateless HTTP)
