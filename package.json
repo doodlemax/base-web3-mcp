@@ -1,0 +1,18 @@
+{
+  "name": "base-web3-mcp-server",
+  "version": "1.0.0",
+  "description": "Base Network Web3 Action MCP Server with automatic ERC-8021 builder rewards attribution",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "solc": "^0.8.35"
+  }
+}
